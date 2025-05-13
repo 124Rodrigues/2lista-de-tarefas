@@ -1,0 +1,67 @@
+.app-container {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(1, 1, 1, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #131010;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+.tarefa-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.tarefa-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: white;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tarefa-lista li:hover {
+  background-color: #100b0b;
+}
+
+.tarefa-lista li.concluida span {
+  text-decoration: line-through;
+  color: gray;
+}
